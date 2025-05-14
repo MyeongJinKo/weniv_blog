@@ -175,15 +175,22 @@ function styleMarkdown(kinds, text, title_info = null) {
     author_date.appendChild(date);
 
     // image
+    // const image = document.createElement("img");
+    // image.src = title_info.thumbnail;
+    // image.alt = title_info.title;
+    // image.classList.add(...postimgtitleStyle.split(" "));
+    // title_section.appendChild(image);
+
     const image = document.createElement("img");
-    image.src = title_info.thumbnail;
+    image.src = `img/${title_info.thumbnail}`;
     image.alt = title_info.title;
-    image.classList.add(...postimgtitleStyle.split(" "));
+    image.classList.add(...postingtitleStyle.split(" "));
     title_section.appendChild(image);
+
 
     // section styling
     title_section.classList.add(...postsectionStyle.split(" "));
-    title_section.setAttribute("id", "title_section");
+    title_section.setAttribute("id", "title_section");S
 
     tempDiv.insertBefore(title_section, tempDiv.firstChild);
   } else if (kinds === "menu") {

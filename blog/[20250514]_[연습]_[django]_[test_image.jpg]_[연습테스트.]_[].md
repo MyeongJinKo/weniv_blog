@@ -2,3 +2,14 @@
 
 * hello world 1
 * hello world 2
+
+![해외 이미지](img/test_image.jpg)
+
+
+```python
+print("hello")
+```
+
+```py
+print("hello")
+```
